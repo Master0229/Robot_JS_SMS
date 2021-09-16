@@ -1,0 +1,40 @@
+{
+  "name": "auto",
+  "pkg": {
+    "scripts": [
+      "./node_modules/webview/*.js"
+    ],
+    "assets": [
+      "./node_modules/webview/bin/"
+    ],
+    "outputPath": "dist"
+  },
+  "bin": "src/index.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --source-maps --copy-files -d dist/ src/",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "0.0.1",
+    "@suchipi/webview": "^0.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "g": "^2.0.1",
+    "iohook": "^0.9.3",
+    "pkg": "^5.3.2",
+    "robotjs": "^0.6.0",
+    "socket.io": "^4.2.0",
+    "socket.io-client": "^4.2.0",
+    "webview": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5"
+  }
+}
